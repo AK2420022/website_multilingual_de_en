@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "can you read this zip file and generate the website and make it multilingual (English, German, Japanese) dont change any design or contents on the website."
+user_problem_statement: "can you read this zip file and generate the website and make it multilingual (English, German, Japanese) dont change any design or contents on the website. can you remove the parts in the footer. the sections solutions, company, resources and legal? we dont need it. now. can you then make it ready for me to save to github"
 
 backend:
   - task: "Keep existing FastAPI backend unchanged"
