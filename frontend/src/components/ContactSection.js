@@ -187,7 +187,7 @@ const ContactSection = () => {
           >
             {!isSubmitted ? (
               <form onSubmit={handleSubmit} className="space-y-6 p-8 bg-white/90 backdrop-blur-sm border border-primary-100 rounded-3xl shadow-xl">
-                <h3 className="text-2xl font-bold text-secondary-900 mb-6">Send Us a Message</h3>
+                <h3 className="text-2xl font-bold text-secondary-900 mb-6">{t('contact.form.title')}</h3>
                 
                 {/* Name Fields */}
                 <div className="grid grid-cols-2 gap-4">
