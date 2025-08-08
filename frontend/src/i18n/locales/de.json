@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "ecosystem": "Ökosystem",
+    "useCases": "Anwendungsfälle",
+    "contact": "Kontakt",
+    "getStarted": "Loslegen",
+    "tagline": "Robotische Ökosysteme entwickeln"
+  },
+  "hero": {
+    "badge": "KI-gesteuerte Robotik-Revolution",
+    "title": "Entwicklung",
+    "subtitle1": "Robotischer",
+    "subtitle2": "Ökosysteme",
+    "description": "Entdecken Sie die Zukunft der Automatisierung mit unserem umfassenden Robotik-Ökosystem. Wir revolutionieren Branchen mit KI-gesteuerten Robotiklösungen, die sich anpassen, lernen und übertreffen.",
+    "exploreEcosystem": "Ökosystem erkunden",
+    "viewUseCases": "Anwendungsfälle ansehen"
+  },
+  "ecosystem": {
+    "badge": "Robotik-Ökosystem",
+    "title": "Einführung",
+    "subtitle": "REks-I",
+    "description": "Unser integriertes Robotik-Ökosystem kombiniert modulare Hardware und intelligente Software, um Robotiklösungen für alle Branchen zu liefern.",
+    "features": {
+      "productivity": {
+        "title": "Produktivität beschleunigen",
+        "description": "Schnellere, intelligentere Ausführung mit datengesteuerten Erkenntnissen"
+      },
+      "enterprise": {
+        "title": "Unternehmenstauglich",
+        "description": "Flexible, skalierbare Robotikkomponenten, die für jede Industrieanwendung oder jeden Anwendungsfall konfiguriert werden können"
+      },
+      "modular": {
+        "title": "Modulare Architektur",
+        "description": "Entwickelt, um sich mit Ihren Bedürfnissen zu entwickeln"
+      },
+      "analytics": {
+        "title": "Echtzeit-Analytik",
+        "description": "Umfassendes Monitoring und Analytics-Dashboard mit Einblicken in Roboterleistung und -betrieb"
+      },
+      "cloud": {
+        "title": "Cloud-Integration",
+        "description": "Nahtlose Cloud-Konnektivität für Fernüberwachung, Updates und zentralisierte Verwaltung von Roboterflotten"
+      },
+      "agnostic": {
+        "title": "Branchenübergreifend",
+        "description": "Entwickelt zur Lösung von Robotik-Automatisierungsherausforderungen in verschiedenen Sektoren"
+      }
+    }
+  },
+  "useCases": {
+    "badge": "Reale Anwendungen",
+    "title": "Transformation",
+    "subtitle": "Jeder Branche",
+    "description": "Von der Landwirtschaft und Logistik bis hin zu einer Vielzahl anderer Sektoren helfen unsere Robotiklösungen Branchen bei der Weiterentwicklung — und ermöglichen intelligentere Entscheidungen und nachhaltigen Fortschritt.",
+    "agriculture": {
+      "title": "Landwirtschaftliche Transformation",
+      "subtitle": "Landwirtschaft",
+      "description": "Transformieren Sie die Landwirtschaft mit KI-gesteuerten Robotern, die Pflanzen überwachen, die Bewässerung optimieren und die Ernte für maximalen Ertrag und Nachhaltigkeit automatisieren.",
+      "benefits": {
+        "yield": "40% Steigerung des Ernteertrags",
+        "monitoring": "24/7 autonome Überwachung",
+        "labor": "60% Reduzierung der Arbeitskosten"
+      },
+      "features": [
+        "Präzisionspflanzung und -aussaat",
+        "Echtzeit-Bodenanalyse",
+        "Automatisierte Schädlingserkennung",
+        "Wetteradaptive Bewässerung",
+        "Pflanzengesundheitsüberwachung",
+        "Prädiktive Erntezeiten"
+      ]
+    },
+    "logistics": {
+      "title": "Logistik-Exzellenz",
+      "subtitle": "Logistik",
+      "description": "Revolutionieren Sie Lager- und Logistikbetriebe mit intelligenten Robotern, die die Genauigkeit verbessern, Verzögerungen minimieren und Material-Handling- und Erfüllungsarbeitsabläufe optimieren.",
+      "benefits": {
+        "efficiency": "95% Produktionseffizienz",
+        "downtime": "Null ungeplante Ausfallzeiten",
+        "safety": "Verbesserte Arbeitssicherheit"
+      },
+      "features": [
+        "Qualitätskontroll-Automatisierung",
+        "Predictive Maintenance",
+        "Fließband-Optimierung",
+        "Bestandsverwaltung",
+        "Sicherheitsprotokoll-Durchsetzung",
+        "Echtzeit-Produktionsanalytik"
+      ]
+    },
+    "more": {
+      "title": "REks-I für jeden Sektor",
+      "subtitle": "Mehr entdecken",
+      "description": "Von intelligenter Dosierung und Verpackung in pharmazeutischen Fabriken bis hin zu intelligenter Inspektion im Bauwesen — REks-I passt sich nahtlos an komplexe, wirkungsvolle Anwendungsfälle in allen Branchen an.",
+      "benefits": {
+        "precision": "99,7% chirurgische Präzision",
+        "monitoring": "Kontinuierliche Patientenüberwachung",
+        "outcomes": "Verbesserte Patientenergebnisse"
+      },
+      "features": [
+        "Minimal-invasive Chirurgie",
+        "Patientenrehabilitations-Unterstützung",
+        "Medikamentenverabreichungssysteme",
+        "Vitalzeichen-Überwachung",
+        "Infektionskontrollprotokolle",
+        "Telemedizin-Integration"
+      ]
+    },
+    "learnMore": "Mehr erfahren über"
+  },
+  "contact": {
+    "badge": "Heute loslegen",
+    "title": "Transformieren Sie Ihre Branche",
+    "subtitle": "mit REks-I",
+    "description": "Verbinden Sie sich mit unseren Robotik-Experten, um zu erkunden, wie unser Ökosystem Ihre Abläufe verbessern und Ihr Wachstum unterstützen kann.",
+    "letsConnect": "Lassen Sie uns verbinden",
+    "connectDescription": "Unser Spezialistenteam ist bereit, Ihnen zu helfen, die Möglichkeiten der intelligenten Automatisierung für Ihre spezifischen Branchenbedürfnisse zu erkunden.",
+    "contactInfo": {
+      "email": {
+        "title": "E-Mail an uns",
+        "info": "contact@reksai-robotics.com",
+        "description": "Kontakt für Anfragen"
+      },
+      "location": {
+        "title": "Unsere Standorte",
+        "info": "Aachen, Deutschland",
+        "info2": "Bangalore, Indien",
+        "description": "Innovations-Hauptquartier"
+      }
+    },
+    "whatToExpect": "Was Sie erwarten können",
+    "expectations": {
+      "consultation": "Personalisierte Beratung",
+      "assessment": "Bewertung kundenspezifischer Robotiklösungen",
+      "roadmap": "ROI-Analyse und Implementierungs-Roadmap"
+    },
+    "form": {
+      "title": "Senden Sie uns eine Nachricht",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail-Adresse",
+      "company": "Firmenname",
+      "industry": "Branche",
+      "message": "Nachricht",
+      "selectIndustry": "Wählen Sie Ihre Branche",
+      "messagePlaceholder": "Erzählen Sie uns von Ihren Robotik-Automatisierungsbedürfnissen...",
+      "firstNamePlaceholder": "Max",
+      "lastNamePlaceholder": "Mustermann",
+      "emailPlaceholder": "max.mustermann@firma.com",
+      "companyPlaceholder": "Ihr Unternehmen",
+      "sendMessage": "Nachricht senden",
+      "sendingMessage": "Nachricht wird gesendet...",
+      "required": "*"
+    },
+    "success": {
+      "title": "Nachricht erfolgreich gesendet!",
+      "description": "Vielen Dank, dass Sie sich an Reksai Robotics gewandt haben. Wir haben Ihre Anfrage erhalten und unser Team wird sich bald bei Ihnen melden.",
+      "sendAnother": "Weitere Nachricht senden"
+    },
+    "industries": [
+      "Landwirtschaft",
+      "Fertigung",
+      "Gesundheitswesen",
+      "Logistik & Lagerhaltung",
+      "Bauwesen",
+      "Energie & Versorgung",
+      "Automobilindustrie",
+      "Lebensmittel & Getränke",
+      "Pharmazeutika",
+      "Sonstiges"
+    ]
+  },
+  "footer": {
+    "dataPrivacy": "Datenschutz",
+    "security": "Sicherheit",
+    "copyright": "© 2025 Reksai Robotics. Alle Rechte vorbehalten."
+  },
+  "loading": "Lade Reksai Robotics...",
+  "language": {
+    "english": "Englisch",
+    "german": "Deutsch",
+    "japanese": "Japanisch"
+  }
+}

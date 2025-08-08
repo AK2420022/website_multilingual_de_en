@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "home": "Home",
+    "ecosystem": "Ecosystem",
+    "useCases": "Use Cases",
+    "contact": "Contact",
+    "getStarted": "Get Started",
+    "tagline": "Engineering Robotic Ecosystems"
+  },
+  "hero": {
+    "badge": "AI-Powered Robotics Revolution",
+    "title": "Engineering",
+    "subtitle1": "Robotic",
+    "subtitle2": "Ecosystems",
+    "description": "Discover the future of automation with our comprehensive robotics ecosystem. We are revolutionizing industries with AI-driven robotic solutions that adapt, learn, and excel.",
+    "exploreEcosystem": "Explore Ecosystem",
+    "viewUseCases": "View Use Cases"
+  },
+  "ecosystem": {
+    "badge": "Robotics Ecosystem",
+    "title": "Introducing",
+    "subtitle": "REks-I",
+    "description": "Our integrated robotics ecosystem combines modular hardware, and intelligent software to deliver robotics solutions across industries.",
+    "features": {
+      "productivity": {
+        "title": "Accelerate productivity",
+        "description": "Faster, smarter execution with data-driven insights"
+      },
+      "enterprise": {
+        "title": "Enterprise-ready",
+        "description": "Flexible, scalable robotics components that can be configured for any industry application or use case"
+      },
+      "modular": {
+        "title": "Modular Architecture",
+        "description": "Designed to evolve with your needs"
+      },
+      "analytics": {
+        "title": "Real-time Analytics",
+        "description": "Comprehensive monitoring and analytics dashboard providing insights into robot performance and operations"
+      },
+      "cloud": {
+        "title": "Cloud Integration",
+        "description": "Seamless cloud connectivity for remote monitoring, updates, and centralized management of robot fleets"
+      },
+      "agnostic": {
+        "title": "Industry-Agnostic",
+        "description": "Built to solve robotics automation challenges across diverse sectors"
+      }
+    }
+  },
+  "useCases": {
+    "badge": "Real-World Applications",
+    "title": "Transforming",
+    "subtitle": "Every Industry",
+    "description": "From agriculture and logistics to a wide range of other sectors, our robotics solutions help industries evolve — enabling smarter decisions and driving sustainable progress.",
+    "agriculture": {
+      "title": "Agriculture Transformation",
+      "subtitle": "Agriculture",
+      "description": "Transform farming with AI-powered robots that monitor crops, optimize irrigation, and automate harvesting for maximum yield and sustainability.",
+      "benefits": {
+        "yield": "40% increase in crop yield",
+        "monitoring": "24/7 autonomous monitoring",
+        "labor": "Reduced labor costs by 60%"
+      },
+      "features": [
+        "Precision planting and seeding",
+        "Real-time soil analysis",
+        "Automated pest detection",
+        "Weather-adaptive irrigation",
+        "Crop health monitoring",
+        "Predictive harvest timing"
+      ]
+    },
+    "logistics": {
+      "title": "Logistics Excellence",
+      "subtitle": "Logistics",
+      "description": "Revolutionize warehouse and logistics operations with intelligent robots that improve accuracy, minimize delays, and streamline material handling and fulfillment workflows.",
+      "benefits": {
+        "efficiency": "95% production efficiency",
+        "downtime": "Zero unplanned downtime",
+        "safety": "Enhanced worker safety"
+      },
+      "features": [
+        "Quality control automation",
+        "Predictive maintenance",
+        "Assembly line optimization",
+        "Inventory management",
+        "Safety protocol enforcement",
+        "Real-time production analytics"
+      ]
+    },
+    "more": {
+      "title": "REks-I for Every Sector",
+      "subtitle": "Discover More",
+      "description": "From smart dispensing and packaging in pharmaceutical factories to intelligent inspection in construction — REks-I adapts seamlessly to complex, high-impact use cases across industries.",
+      "benefits": {
+        "precision": "99.7% surgical precision",
+        "monitoring": "Continuous patient monitoring",
+        "outcomes": "Improved patient outcomes"
+      },
+      "features": [
+        "Minimally invasive surgery",
+        "Patient rehabilitation support",
+        "Medication delivery systems",
+        "Vital signs monitoring",
+        "Infection control protocols",
+        "Telemedicine integration"
+      ]
+    },
+    "learnMore": "Learn More About"
+  },
+  "contact": {
+    "badge": "Get Started Today",
+    "title": "Transform your industry",
+    "subtitle": "with REks-I",
+    "description": "Connect with our robotics experts to explore how our ecosystem can enhance your operations and support your growth.",
+    "letsConnect": "Let's Connect",
+    "connectDescription": "Our team of specialists is ready to help you explore the possibilities of intelligent automation for your specific industry needs.",
+    "contactInfo": {
+      "email": {
+        "title": "Email Us",
+        "info": "contact@reksai-robotics.com",
+        "description": "Get in touch for inquiries"
+      },
+      "location": {
+        "title": "Our locations",
+        "info": "Aachen, Germany",
+        "info2": "Bangalore, India",
+        "description": "Innovation headquarters"
+      }
+    },
+    "whatToExpect": "What to Expect",
+    "expectations": {
+      "consultation": "Personalized consultation",
+      "assessment": "Custom robotics solution assessment",
+      "roadmap": "ROI analysis and implementation roadmap"
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "company": "Company Name",
+      "industry": "Industry",
+      "message": "Message",
+      "selectIndustry": "Select your industry",
+      "messagePlaceholder": "Tell us about your robotics automation needs...",
+      "firstNamePlaceholder": "John",
+      "lastNamePlaceholder": "Doe",
+      "emailPlaceholder": "john.doe@company.com",
+      "companyPlaceholder": "Your Company",
+      "sendMessage": "Send Message",
+      "sendingMessage": "Sending Message...",
+      "required": "*"
+    },
+    "success": {
+      "title": "Message Sent Successfully!",
+      "description": "Thank you for reaching out to Reksai Robotics. We have received your inquiry and our team will be in touch with you soon.",
+      "sendAnother": "Send Another Message"
+    },
+    "industries": [
+      "Agriculture",
+      "Manufacturing",
+      "Healthcare",
+      "Logistics & Warehousing",
+      "Construction",
+      "Energy & Utilities",
+      "Automotive",
+      "Food & Beverage",
+      "Pharmaceuticals",
+      "Other"
+    ]
+  },
+  "footer": {
+    "dataPrivacy": "Data Privacy",
+    "security": "Security",
+    "copyright": "© 2025 Reksai Robotics. All rights reserved."
+  },
+  "loading": "Loading Reksai Robotics...",
+  "language": {
+    "english": "English",
+    "german": "German",  
+    "japanese": "Japanese"
+  }
+}

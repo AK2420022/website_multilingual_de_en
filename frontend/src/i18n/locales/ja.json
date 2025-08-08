@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "ecosystem": "エコシステム",
+    "useCases": "ユースケース",
+    "contact": "お問い合わせ",
+    "getStarted": "始める",
+    "tagline": "ロボットエコシステムの構築"
+  },
+  "hero": {
+    "badge": "AI駆動ロボティクス革命",
+    "title": "ロボット",
+    "subtitle1": "エコシステム",
+    "subtitle2": "の構築",
+    "description": "包括的なロボティクスエコシステムで自動化の未来を発見してください。適応し、学習し、優秀なAI駆動のロボットソリューションで業界に革命を起こしています。",
+    "exploreEcosystem": "エコシステムを探索",
+    "viewUseCases": "ユースケースを見る"
+  },
+  "ecosystem": {
+    "badge": "ロボティクスエコシステム",
+    "title": "導入",
+    "subtitle": "REks-I",
+    "description": "統合されたロボティクスエコシステムは、モジュラーハードウェアとインテリジェントソフトウェアを組み合わせて、業界全体にロボティクスソリューションを提供します。",
+    "features": {
+      "productivity": {
+        "title": "生産性の向上",
+        "description": "データ駆動型インサイトによる高速で賢い実行"
+      },
+      "enterprise": {
+        "title": "エンタープライズ対応",
+        "description": "あらゆる産業アプリケーションやユースケースに対応可能な柔軟でスケーラブルなロボティクスコンポーネント"
+      },
+      "modular": {
+        "title": "モジュラーアーキテクチャ",
+        "description": "ニーズと共に進化するよう設計"
+      },
+      "analytics": {
+        "title": "リアルタイム分析",
+        "description": "ロボットのパフォーマンスと運用に関するインサイトを提供する包括的な監視および分析ダッシュボード"
+      },
+      "cloud": {
+        "title": "クラウド統合",
+        "description": "リモート監視、アップデート、およびロボットフリートの一元管理のためのシームレスなクラウド接続"
+      },
+      "agnostic": {
+        "title": "業界横断型",
+        "description": "多様なセクターにわたるロボティクス自動化の課題を解決するために構築"
+      }
+    }
+  },
+  "useCases": {
+    "badge": "実世界のアプリケーション",
+    "title": "すべての業界を",
+    "subtitle": "変革",
+    "description": "農業と物流から他の幅広いセクターまで、当社のロボティクスソリューションは業界の進化を支援し、より賢い意思決定と持続可能な進歩を実現します。",
+    "agriculture": {
+      "title": "農業の変革",
+      "subtitle": "農業",
+      "description": "作物を監視し、灌漑を最適化し、最大収量と持続可能性のための収穫を自動化するAI駆動ロボットで農業を変革します。",
+      "benefits": {
+        "yield": "作物収量40％増加",
+        "monitoring": "24時間365日自律監視",
+        "labor": "人件費60％削減"
+      },
+      "features": [
+        "精密播種",
+        "リアルタイム土壌分析",
+        "自動害虫検出",
+        "天候適応灌漑",
+        "作物健康監視",
+        "予測収穫タイミング"
+      ]
+    },
+    "logistics": {
+      "title": "物流の卓越性",
+      "subtitle": "物流",
+      "description": "精度を向上させ、遅延を最小限に抑え、マテリアルハンドリングと履行ワークフローを合理化するインテリジェントロボットで倉庫と物流業務に革命を起こします。",
+      "benefits": {
+        "efficiency": "95％の生産効率",
+        "downtime": "計画外ダウンタイムゼロ",
+        "safety": "労働者安全性の向上"
+      },
+      "features": [
+        "品質管理自動化",
+        "予知保全",
+        "組立ライン最適化",
+        "在庫管理",
+        "安全プロトコル実施",
+        "リアルタイム生産分析"
+      ]
+    },
+    "more": {
+      "title": "あらゆるセクター向けREks-I",
+      "subtitle": "もっと発見",
+      "description": "製薬工場でのスマート調剤と包装から建設でのインテリジェント検査まで、REks-Iは業界全体の複雑で影響力の高いユースケースにシームレスに適応します。",
+      "benefits": {
+        "precision": "99.7％の外科精度",
+        "monitoring": "継続的患者監視",
+        "outcomes": "患者転帰の改善"
+      },
+      "features": [
+        "最小侵襲手術",
+        "患者リハビリテーション支援",
+        "薬物送達システム",
+        "バイタルサイン監視",
+        "感染制御プロトコル",
+        "遠隔医療統合"
+      ]
+    },
+    "learnMore": "詳細を学ぶ"
+  },
+  "contact": {
+    "badge": "今日から始める",
+    "title": "あなたの業界を変革",
+    "subtitle": "REks-Iで",
+    "description": "当社のロボティクス専門家と連絡を取り、当社のエコシステムがあなたの運営を強化し、成長をサポートする方法を探索してください。",
+    "letsConnect": "つながりましょう",
+    "connectDescription": "当社の専門家チームは、あなたの特定の業界ニーズに対するインテリジェント自動化の可能性を探索するお手伝いをする準備ができています。",
+    "contactInfo": {
+      "email": {
+        "title": "メールでお問い合わせ",
+        "info": "contact@reksai-robotics.com",
+        "description": "お問い合わせはこちら"
+      },
+      "location": {
+        "title": "私たちの拠点",
+        "info": "ドイツ、アーヘン",
+        "info2": "インド、バンガロール",
+        "description": "イノベーション本部"
+      }
+    },
+    "whatToExpected": "期待できること",
+    "expectations": {
+      "consultation": "個人向けコンサルテーション",
+      "assessment": "カスタムロボティクスソリューション評価",
+      "roadmap": "ROI分析と実装ロードマップ"
+    },
+    "form": {
+      "title": "メッセージを送信",
+      "firstName": "名",
+      "lastName": "姓",
+      "email": "メールアドレス",
+      "company": "会社名",
+      "industry": "業界",
+      "message": "メッセージ",
+      "selectIndustry": "業界を選択してください",
+      "messagePlaceholder": "ロボティクス自動化のニーズについて教えてください...",
+      "firstNamePlaceholder": "太郎",
+      "lastNamePlaceholder": "田中",
+      "emailPlaceholder": "taro.tanaka@company.com",
+      "companyPlaceholder": "あなたの会社",
+      "sendMessage": "メッセージを送信",
+      "sendingMessage": "メッセージ送信中...",
+      "required": "*"
+    },
+    "success": {
+      "title": "メッセージが正常に送信されました！",
+      "description": "Reksai Roboticsにお問い合わせいただき、ありがとうございます。お問い合わせを受け取りました。当社のチームが間もなくご連絡いたします。",
+      "sendAnother": "別のメッセージを送信"
+    },
+    "industries": [
+      "農業",
+      "製造業",
+      "ヘルスケア",
+      "物流・倉庫",
+      "建設",
+      "エネルギー・公益事業",
+      "自動車",
+      "食品・飲料",
+      "医薬品",
+      "その他"
+    ]
+  },
+  "footer": {
+    "dataPrivacy": "データプライバシー",
+    "security": "セキュリティ",
+    "copyright": "© 2025 Reksai Robotics. 全著作権所有。"
+  },
+  "loading": "Reksai Robotics読み込み中...",
+  "language": {
+    "english": "英語",
+    "german": "ドイツ語",
+    "japanese": "日本語"
+  }
+}
