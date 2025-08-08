@@ -7,6 +7,7 @@ import LanguageSwitcher from './LanguageSwitcher';
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,9 +19,9 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Ecosystem', href: '#ecosystem' },
-    { name: 'Use Cases', href: '#use-cases' },
+    { name: t('nav.home'), href: '#home' },
+    { name: t('nav.ecosystem'), href: '#ecosystem' },
+    { name: t('nav.useCases'), href: '#use-cases' },
   ];
 
   return (
