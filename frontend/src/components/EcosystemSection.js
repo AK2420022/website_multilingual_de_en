@@ -1,43 +1,46 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Cpu, Brain, Cog, Shield, Zap, Globe, Users, CheckCircle, Building2, Factory} from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const EcosystemSection = () => {
+  const { t } = useTranslation();
+  
   const ecosystemFeatures = [
     {
       icon: Brain,
-      title: "Accelerate productivity",
-      description: "Daster, smarter execution with data-driven insights",
+      title: t('ecosystem.aiIntelligence.title'),
+      description: t('ecosystem.aiIntelligence.description'),
       gradient: "from-primary-500 to-primary-600"
     },
     {
       icon: Cog,
-      title: "Enterprise-ready",
-      description: "Flexible, scalable robotics components that can be configured for any industry application or use case",
+      title: t('ecosystem.modularDesign.title'),
+      description: t('ecosystem.modularDesign.description'),
       gradient: "from-success-500 to-success-600"
     },
     {
       icon: Building2,
-      title: "Modular Architecture",
-      description: "Designed to evolve with your needs",
+      title: t('ecosystem.realTimeAnalytics.title'),
+      description: t('ecosystem.realTimeAnalytics.description'),
       gradient: "from-red-500 to-red-600"
     },
     {
       icon: Zap,
-      title: "Real-time Analytics",
-      description: "Comprehensive monitoring and analytics dashboard providing insights into robot performance and operations",
+      title: t('ecosystem.cloudIntegration.title'),
+      description: t('ecosystem.cloudIntegration.description'),
       gradient: "from-yellow-500 to-orange-500"
     },
     {
       icon: Globe,
-      title: "Cloud Integration",
-      description: "Seamless cloud connectivity for remote monitoring, updates, and centralized management of robot fleets",
+      title: t('ecosystem.roboticArms.title'),
+      description: t('ecosystem.roboticArms.description'),
       gradient: "from-blue-500 to-indigo-500"
     },
     {
       icon: Factory,
-      title: "Industry-Agnostic",
-      description: "Built to solve robotics automation challenges across diverse sectors",
+      title: t('ecosystem.autonomousVehicles.title'),
+      description: t('ecosystem.autonomousVehicles.description'),
       gradient: "from-purple-500 to-pink-500"
     }
   ];
@@ -80,17 +83,16 @@ const EcosystemSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Cpu className="h-4 w-4" />
-            <span>Robotics Ecosystem</span>
+            <span>{t('ecosystem.badge')}</span>
           </motion.div>
 
           <h2 className="text-5xl md:text-6xl font-bold text-secondary-900 mb-6">
-            Introducing
-            <span className="block gradient-text">REks-I</span>
+            {t('ecosystem.title')}
+            <span className="block gradient-text">{t('ecosystem.titleEcosystem')}</span>
           </h2>
           
           <p className="text-xl text-secondary-600 max-w-3xl mx-auto leading-relaxed">
-            Our integrated robotics ecosystem combines modular hardware, 
-            and intelligent software to deliver robotics solutions across industries.
+            {t('ecosystem.subtitle')}
           </p>
         </motion.div>
 
