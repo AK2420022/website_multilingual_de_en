@@ -53,9 +53,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                Discover the future of automation with our comprehensive robotics ecosystem. 
-                We are revolutionizing industries with 
-                AI-driven robotic solutions that adapt, learn, and excel.
+                {t('hero.description')}
               </motion.p>
 
               {/* CTA Buttons */}
