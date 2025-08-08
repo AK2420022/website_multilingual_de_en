@@ -265,7 +265,7 @@ const ContactSection = () => {
                 {/* Industry */}
                 <div>
                   <label className="block text-secondary-700 text-sm font-medium mb-2">
-                    Industry *
+                    {t('contact.form.industry')} {t('contact.form.required')}
                   </label>
                   <select
                     name="industry"
@@ -274,7 +274,7 @@ const ContactSection = () => {
                     required
                     className="w-full px-4 py-3 bg-white border border-primary-200 rounded-xl text-secondary-900 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
                   >
-                    <option value="">Select your industry</option>
+                    <option value="">{t('contact.form.selectIndustry')}</option>
                     {industries.map((industry) => (
                       <option key={industry} value={industry} className="bg-white">
                         {industry}
