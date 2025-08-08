@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Cpu, Brain, Cog, Shield, Zap, Globe, Users, CheckCircle, Building2, Factory} from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const EcosystemSection = () => {
   const ecosystemFeatures = [
