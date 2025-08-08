@@ -100,12 +100,12 @@ const UseCasesSection = () => {
           </motion.div>
 
           <h2 className="text-5xl md:text-6xl font-bold text-secondary-900 mb-6">
-            Transforming
-            <span className="block gradient-text">Every Industry</span>
+            {t('useCases.title')}
+            <span className="block gradient-text">{t('useCases.subtitle')}</span>
           </h2>
                     
           <p className="text-xl text-secondary-600 max-w-3xl mx-auto leading-relaxed">
-            From agriculture and logistics to a wide range of other sectors, our robotics solutions help industries evolve — enabling smarter decisions and driving sustainable progress.
+            {t('useCases.description')}
           </p>
         </motion.div>
 
