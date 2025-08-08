@@ -97,13 +97,12 @@ const ContactSection = () => {
           </motion.div>
 
           <h2 className="text-5xl md:text-6xl font-bold text-secondary-900 mb-6">
-            Transform your industry
-            <span className="block gradient-text">with REks-I</span>
+            {t('contact.title')}
+            <span className="block gradient-text">{t('contact.subtitle')}</span>
           </h2>
           
           <p className="text-xl text-secondary-600 max-w-3xl mx-auto leading-relaxed">
-            Connect with our robotics experts to explore how our ecosystem can 
-            enhance your operations and support your growth.
+            {t('contact.description')}
           </p>
         </motion.div>
 
