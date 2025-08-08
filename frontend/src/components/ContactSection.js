@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, CheckCircle, User, Building, MessageSquare } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
