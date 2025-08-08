@@ -69,7 +69,7 @@ const HeroSection = () => {
                   whileTap={{ scale: 0.98 }}
                   onClick={() => document.getElementById('ecosystem').scrollIntoView({ behavior: 'smooth' })}                                    
                 >
-                  <span>Explore Ecosystem</span>
+                  <span>{t('hero.exploreEcosystem')}</span>
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </motion.button>
 
