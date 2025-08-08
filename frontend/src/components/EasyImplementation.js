@@ -65,70 +65,71 @@ const EasyImplementationSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-                 
-<div className="relative arrow-path flex flex-col justify-between items-center"
-  style={{
-    backgroundImage: 'url("arrow-path.svg")',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    backgroundSize: 'contain',
-    height: '800px',
-    backgroundColor: 'transparent', // Optional: ensure transparency    
-  }}> 
-  <div className="space-y-4">
-    
-    <div className="h-100 p-8 bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl hover-lift hover:bg-white/90 transition-all duration-300 hover:shadow-xl">
-      <div className="flex items-center gap-4 mb-6">
-        {/* Icon with gradient background */}
-        <div className="p-4 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-500 group-hover:scale-110 transition-transform duration-300">
-          <BookCheck className="h-8 w-8 text-white" />
-        </div>
+          <div 
+            className="relative arrow-path flex flex-col justify-between items-center"
+            style={{
+              backgroundImage: 'url("arrow-path.svg")',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'center',
+              backgroundSize: 'contain',
+              height: '800px',
+              backgroundColor: 'transparent',
+            }}
+          > 
+            <div className="space-y-4">
+              
+              <div className="h-100 p-8 bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl hover-lift hover:bg-white/90 transition-all duration-300 hover:shadow-xl">
+                <div className="flex items-center gap-4 mb-6">
+                  {/* Icon with gradient background */}
+                  <div className="p-4 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-500 group-hover:scale-110 transition-transform duration-300">
+                    <BookCheck className="h-8 w-8 text-white" />
+                  </div>
 
-        {/* Text on white background */}
-        <h3 className="text-2xl font-bold text-gray-800 leading-none group-hover:text-blue-600 transition-colors duration-300">
-          {t('implementation.step1.title')}
-        </h3>
-      </div>
-      <p className="text-secondary-600 leading-relaxed">
-        {t('implementation.step1.description')}
-      </p>
-    </div>
+                  {/* Text on white background */}
+                  <h3 className="text-2xl font-bold text-gray-800 leading-none group-hover:text-blue-600 transition-colors duration-300">
+                    {t('implementation.step1.title')}
+                  </h3>
+                </div>
+                <p className="text-secondary-600 leading-relaxed">
+                  {t('implementation.step1.description')}
+                </p>
+              </div>
 
-    <div className="h-100 p-8 bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl hover-lift hover:bg-white/90 transition-all duration-300 hover:shadow-xl">
-      <div className="flex items-center gap-4 mb-6">
-        {/* Icon with gradient background */}
-        <div className="p-4 rounded-2xl bg-gradient-to-br from-green-500 to-teal-500 group-hover:scale-110 transition-transform duration-300">
-          <Hammer className="h-8 w-8 text-white" />
-        </div>
+              <div className="h-100 p-8 bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl hover-lift hover:bg-white/90 transition-all duration-300 hover:shadow-xl">
+                <div className="flex items-center gap-4 mb-6">
+                  {/* Icon with gradient background */}
+                  <div className="p-4 rounded-2xl bg-gradient-to-br from-green-500 to-teal-500 group-hover:scale-110 transition-transform duration-300">
+                    <Hammer className="h-8 w-8 text-white" />
+                  </div>
 
-        {/* Text on white background */}
-        <h3 className="text-2xl font-bold text-gray-800 leading-none group-hover:text-blue-600 transition-colors duration-300">
-          {t('implementation.step2.title')}
-        </h3>
-      </div>
-      <p className="text-secondary-600 leading-relaxed">
-        {t('implementation.step2.description')}
-      </p>
-    </div>  
+                  {/* Text on white background */}
+                  <h3 className="text-2xl font-bold text-gray-800 leading-none group-hover:text-blue-600 transition-colors duration-300">
+                    {t('implementation.step2.title')}
+                  </h3>
+                </div>
+                <p className="text-secondary-600 leading-relaxed">
+                  {t('implementation.step2.description')}
+                </p>
+              </div>  
 
-    <div className="h-100 p-8 bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl hover-lift hover:bg-white/90 transition-all duration-300 hover:shadow-xl">
-      <div className="flex items-center gap-4 mb-6">
-        {/* Icon with gradient background */}
-        <div className="p-4 rounded-2xl bg-gradient-to-br from-pink-500 to-red-500 group-hover:scale-110 transition-transform duration-300">
-          <Wrench className="h-8 w-8 text-white" />
-        </div>
+              <div className="h-100 p-8 bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl hover-lift hover:bg-white/90 transition-all duration-300 hover:shadow-xl">
+                <div className="flex items-center gap-4 mb-6">
+                  {/* Icon with gradient background */}
+                  <div className="p-4 rounded-2xl bg-gradient-to-br from-pink-500 to-red-500 group-hover:scale-110 transition-transform duration-300">
+                    <Wrench className="h-8 w-8 text-white" />
+                  </div>
 
-        {/* Text on white background */ 
-        <h3 className="text-2xl font-bold text-gray-800 leading-none group-hover:text-blue-600 transition-colors duration-300">
-          {t('implementation.step3.title')}
-        </h3>
-      </div>                   
-      <p className="text-secondary-600 leading-relaxed">
-        {t('implementation.step3.description')}
-      </p>
-    </div>    
-  </div> 
-</div>
+                  {/* Text on white background */ 
+                  <h3 className="text-2xl font-bold text-gray-800 leading-none group-hover:text-blue-600 transition-colors duration-300">
+                    {t('implementation.step3.title')}
+                  </h3>
+                </div>                   
+                <p className="text-secondary-600 leading-relaxed">
+                  {t('implementation.step3.description')}
+                </p>
+              </div>    
+            </div> 
+          </div>
         </motion.div>
 
         {/* Bottom CTA */}
