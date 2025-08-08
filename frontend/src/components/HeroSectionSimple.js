@@ -80,7 +80,7 @@ const HeroSection = () => {
                   onClick={() => document.getElementById('use-cases').scrollIntoView({ behavior: 'smooth' })}                  
                 >
                   <PlayCircle className="mr-2 h-5 w-5" />
-                  <span>View Use Cases</span>
+                  <span>{t('hero.viewUseCases')}</span>
                 </motion.button>
               </motion.div>
             </div>
