@@ -116,10 +116,9 @@ const ContactSection = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <div>
-              <h3 className="text-3xl font-bold text-secondary-900 mb-4">Let's Connect</h3>
+              <h3 className="text-3xl font-bold text-secondary-900 mb-4">{t('contact.letsConnect')}</h3>
               <p className="text-secondary-600 text-lg leading-relaxed">
-                Our team of specialists is ready to help you explore the possibilities 
-                of intelligent automation for your specific industry needs.
+                {t('contact.connectDescription')}
               </p>
             </div>
 
