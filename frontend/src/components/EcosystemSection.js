@@ -1,56 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Cpu, Brain, Cog, Shield, Zap, Globe, Users, CheckCircle, Building2, Factory } from 'lucide-react';
+import { Cpu, Brain, Cog, Building2, Zap, Globe, Factory } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const styles = `
-  /* Background wrapper with animated faded background */
-  .ecosystem-bg-wrapper {
-    position: relative;
-    overflow: hidden;
-    min-height: 90vh; /* full viewport height */
-  }
-  .ecosystem-bg-wrapper::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: url('/bg_ecosystem.jpg');
-    background-size: 110% 110%;   /* enlarge width and height by 10% */
-    background-position: center 100%;
-    opacity: 0.25;                /* a bit more visible */
-    filter: brightness(0.9);      /* no blur for clarity */
-    z-index: 0;
-    pointer-events: none;
-    animation: slowZoom 20s ease-in-out infinite, fadePulse 6s ease-in-out infinite;
-    transform-origin: center center;
-    transition: filter 0.3s ease;
-  }
-
-  /* White semi-transparent overlay on top of the image */
-  .ecosystem-bg-wrapper::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: rgba(255, 255, 255, 0.2); /* lighter overlay */
-    z-index: 1;
-    pointer-events: none;
-  }
-
-  @keyframes slowZoom {
+  @keyframes pulseGlow {
     0%, 100% {
-      transform: scale(1.1);       /* zoom from 110% */
+      box-shadow: 0 0 15px 3px rgba(59, 130, 246, 0.5);
     }
     50% {
-      transform: scale(1.15);      /* to 115% */
-    }
-  }
-
-  @keyframes fadePulse {
-    0%, 100% {
-      opacity: 0.25;
-    }
-    50% {
-      opacity: 0.2;
+      box-shadow: 0 0 25px 8px rgba(59, 130, 246, 0.8);
     }
   }
 `;
@@ -120,11 +79,12 @@ const EcosystemSection = () => {
     <>
       <style>{styles}</style>
 
-      <section id="ecosystem" className="py-22 bg-gradient-to-br from-blue-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ecosystem-bg-wrapper">
+      <section id="ecosystem" className="py-20 bg-gradient-to-br from-blue-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
           {/* Section Header */}
           <motion.div
-            className="text-center mb-20 relative z-10"
+            className="text-center mb-12"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -145,15 +105,35 @@ const EcosystemSection = () => {
               {t('ecosystem.title')}
               <span className="block gradient-text">{t('ecosystem.subtitle')}</span>
             </h2>
-            
-            <p className="text-xl text-secondary-600 max-w-3xl mx-auto leading-relaxed">
+
+            <p className="text-xl text-secondary-600 max-w-3xl mx-auto leading-relaxed mb-12">
               {t('ecosystem.description')}
             </p>
           </motion.div>
 
+          {/* Sleek highlighted foreground image BELOW the intro */}
+          <motion.img
+            src="/bg_ecosystem.jpg"
+            alt="Ecosystem visual"
+            className="mx-auto mb-16 w-4/5 max-h-[40rem] object-cover"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            whileHover={{ scale: 1.05, filter: 'brightness(1.1)' }}
+            transition={{ duration: 1.5, ease: "easeOut", type: 'spring', stiffness: 300, damping: 20 }}
+            style={{
+              filter: 'brightness(1) contrast(1.05) saturate(1.1)',
+              boxShadow: '0 0 25px 8px rgba(59, 130, 246, 0.6)',
+              borderRadius: '1rem',
+              border: '3px solid',
+              borderImageSlice: 1,
+              borderImageSource: 'linear-gradient(45deg, #3b82f6, #8b5cf6)',
+              animation: 'pulseGlow 3s ease-in-out infinite',
+            }}
+          />
+
           {/* Features Grid */}
           <motion.div
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10"
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -177,7 +157,7 @@ const EcosystemSection = () => {
                     <h3 className="text-2xl font-bold text-secondary-900 mb-4 group-hover:text-primary-600 transition-colors duration-300">
                       {feature.title}
                     </h3>
-                    
+
                     <p className="text-secondary-600 leading-relaxed">
                       {feature.description}
                     </p>
@@ -189,6 +169,7 @@ const EcosystemSection = () => {
               );
             })}
           </motion.div>
+
         </div>
       </section>
     </>
