@@ -78,8 +78,8 @@ const UseCasesSection = () => {
   };
 
   return (
-    <section id="use-cases" className="py-24 bg-gradient-to-br from-white to-blue-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="use-cases" className="min-h-screen py-36 bg-gradient-to-br from-white to-blue-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         {/* Section Header */}
         <motion.div
           className="text-center mb-20"
@@ -202,3 +202,4 @@ const UseCasesSection = () => {
 };
 
 export default UseCasesSection;
+
