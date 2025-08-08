@@ -4,6 +4,7 @@ import { ArrowRight, PlayCircle, Sparkles, Zap } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   return (
     <section id="home" className="relative h-screen overflow-hidden bg-gradient-to-br from-blue-50 to-white">
       {/* Background Pattern */}
