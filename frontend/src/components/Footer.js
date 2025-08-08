@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Cpu, Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 import PrivacyPolicy from './PrivacyPolicy';
 import SecurityPolicy from './PrivacyPolicy';
 
