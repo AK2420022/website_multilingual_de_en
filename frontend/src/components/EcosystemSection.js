@@ -83,7 +83,7 @@ const EcosystemSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Cpu className="h-4 w-4" />
-            <span>Robotics Ecosystem</span>
+            <span>{t('ecosystem.badge')}</span>
           </motion.div>
 
           <h2 className="text-5xl md:text-6xl font-bold text-secondary-900 mb-6">
