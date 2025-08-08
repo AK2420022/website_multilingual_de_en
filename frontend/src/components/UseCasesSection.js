@@ -96,7 +96,7 @@ const UseCasesSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <PlayCircle className="h-4 w-4" />
-            <span>Real-World Applications</span>
+            <span>{t('useCases.badge')}</span>
           </motion.div>
 
           <h2 className="text-5xl md:text-6xl font-bold text-secondary-900 mb-6">
