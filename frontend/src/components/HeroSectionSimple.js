@@ -1,8 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, PlayCircle, Sparkles, Zap } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="home" className="relative h-screen overflow-hidden bg-gradient-to-br from-blue-50 to-white">
       {/* Background Pattern */}
@@ -29,7 +32,7 @@ const HeroSection = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <Sparkles className="h-4 w-4" />
-                <span>AI-Powered Robotics Revolution</span>
+                <span>{t('hero.badge')}</span>
               </motion.div>
 
               {/* Main Headline */}
@@ -39,9 +42,9 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.4 }}
               >
-                Engineering
-                <span className="block gradient-text"> Robotic</span>
-                <span className="block text-primary-600"> Ecosystems</span>
+                {t('hero.title')}
+                <span className="block gradient-text"> {t('hero.titleRobotic')}</span>
+                <span className="block text-primary-600"> {t('hero.titleEcosystems')}</span>
               </motion.h1>
 
               {/* Subtitle */}
@@ -51,9 +54,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                Discover the future of automation with our comprehensive robotics ecosystem. 
-                We are revolutionizing industries with 
-                AI-driven robotic solutions that adapt, learn, and excel.
+                {t('hero.subtitle')}
               </motion.p>
 
               {/* CTA Buttons */}
@@ -69,7 +70,7 @@ const HeroSection = () => {
                   whileTap={{ scale: 0.98 }}
                   onClick={() => document.getElementById('ecosystem').scrollIntoView({ behavior: 'smooth' })}                                    
                 >
-                  <span>Explore Ecosystem</span>
+                  <span>{t('hero.exploreEcosystem')}</span>
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </motion.button>
 
@@ -80,7 +81,7 @@ const HeroSection = () => {
                   onClick={() => document.getElementById('use-cases').scrollIntoView({ behavior: 'smooth' })}                  
                 >
                   <PlayCircle className="mr-2 h-5 w-5" />
-                  <span>View Use Cases</span>
+                  <span>{t('hero.viewUseCases')}</span>
                 </motion.button>
               </motion.div>
             </div>
