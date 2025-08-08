@@ -227,7 +227,7 @@ const ContactSection = () => {
                 {/* Email */}
                 <div>
                   <label className="block text-secondary-700 text-sm font-medium mb-2">
-                    Email Address *
+                    {t('contact.form.email')} {t('contact.form.required')}
                   </label>
                   <div className="relative">
                     <Mail className="absolute left-3 top-3 h-5 w-5 text-secondary-400" />
@@ -238,7 +238,7 @@ const ContactSection = () => {
                       onChange={handleInputChange}
                       required
                       className="w-full pl-11 pr-4 py-3 bg-white border border-primary-200 rounded-xl text-secondary-900 placeholder-secondary-400 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
-                      placeholder="john.doe@company.com"
+                      placeholder={t('contact.form.emailPlaceholder')}
                     />
                   </div>
                 </div>
