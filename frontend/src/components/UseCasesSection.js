@@ -1,22 +1,24 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Sprout, Factory, Heart, ArrowRight, PlayCircle, TrendingUp, Clock, Users, Compass } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const UseCasesSection = () => {
+  const { t } = useTranslation();
   const [activeCase, setActiveCase] = useState(0);
 
   const useCases = [
     {
       id: 'agriculture',
       icon: Sprout,
-      title: 'Agriculture Transformation',
-      subtitle: 'Agriculture',
+      title: t('useCases.agriculture.title'),
+      subtitle: t('useCases.agriculture.title'),
       image: 'agri.png',
-      description: 'Transform farming with AI-powered robots that monitor crops, optimize irrigation, and automate harvesting for maximum yield and sustainability.',
+      description: t('useCases.agriculture.description'),
       benefits: [
-        { icon: TrendingUp, text: '40% increase in crop yield', color: 'success' },
-        { icon: Clock, text: '24/7 autonomous monitoring', color: 'primary' },
-        { icon: Users, text: 'Reduced labor costs by 60%', color: 'purple' }
+        { icon: TrendingUp, text: t('useCases.agriculture.yield'), color: 'success' },
+        { icon: Clock, text: t('useCases.agriculture.water'), color: 'primary' },
+        { icon: Users, text: t('useCases.agriculture.labor'), color: 'purple' }
       ],
       features: [
         'Precision planting and seeding',
@@ -32,14 +34,14 @@ const UseCasesSection = () => {
     {
       id: 'manufacturing',
       icon: Factory,
-      title: 'Logistics Excellence',
-      subtitle: 'Logistics',
+      title: t('useCases.manufacturing.title'),
+      subtitle: t('useCases.manufacturing.title'),
       image: 'logistics.png',
-      description: 'Revolutionize warehouse and logistics operations with intelligent robots that improve accuracy, minimize delays, and streamline material handling and fulfillment workflows.',
+      description: t('useCases.manufacturing.description'),
       benefits: [
-        { icon: TrendingUp, text: '95% production efficiency', color: 'success' },
-        { icon: Clock, text: 'Zero unplanned downtime', color: 'primary' },
-        { icon: Users, text: 'Enhanced worker safety', color: 'purple' }
+        { icon: TrendingUp, text: t('useCases.manufacturing.efficiency'), color: 'success' },
+        { icon: Clock, text: t('useCases.manufacturing.quality'), color: 'primary' },
+        { icon: Users, text: t('useCases.manufacturing.productivity'), color: 'purple' }
       ],
       features: [
         'Quality control automation',
@@ -53,24 +55,24 @@ const UseCasesSection = () => {
       bgColor: 'from-primary-50 to-primary-100'
     },
     {
-      id: 'healthcare',
+      id: 'logistics',
       icon: Compass,
-      title: 'REks-I for Every Sector',
-      subtitle: 'Discover More',
+      title: t('useCases.logistics.title'),
+      subtitle: t('useCases.logistics.title'),
       image: 'more.png',
-      description: 'From smart dispensing and packaging in pharmaceutical factories to intelligent inspection in construction — REks-I adapts seamlessly to complex, high-impact use cases across industries.',
+      description: t('useCases.logistics.description'),
       benefits: [
-        { icon: TrendingUp, text: '99.7% surgical precision', color: 'success' },
-        { icon: Clock, text: 'Continuous patient monitoring', color: 'primary' },
-        { icon: Users, text: 'Improved patient outcomes', color: 'purple' }
+        { icon: TrendingUp, text: t('useCases.logistics.speed'), color: 'success' },
+        { icon: Clock, text: t('useCases.logistics.accuracy'), color: 'primary' },
+        { icon: Users, text: t('useCases.logistics.cost'), color: 'purple' }
       ],
       features: [
-        'Minimally invasive surgery',
-        'Patient rehabilitation support',
-        'Medication delivery systems',
-        'Vital signs monitoring',
-        'Infection control protocols',
-        'Telemedicine integration'
+        'Automated sorting systems',
+        'Inventory management',
+        'Route optimization',
+        'Quality control',
+        'Real-time tracking',
+        'Warehouse automation'
       ],
       gradient: 'from-red-500 to-pink-500',
       bgColor: 'from-red-50 to-pink-50'
@@ -115,16 +117,16 @@ const UseCasesSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <PlayCircle className="h-4 w-4" />
-            <span>Real-World Applications</span>
+            <span>{t('useCases.badge')}</span>
           </motion.div>
 
           <h2 className="text-5xl md:text-6xl font-bold text-secondary-900 mb-6">
-            Transforming
-            <span className="block gradient-text">Every Industry</span>
+            {t('useCases.title')}
+            <span className="block gradient-text">{t('useCases.titleIntelligent')}</span>
           </h2>
                     
           <p className="text-xl text-secondary-600 max-w-3xl mx-auto leading-relaxed">
-            From agriculture and logistics to a wide range of other sectors, our robotics solutions help industries evolve — enabling smarter decisions and driving sustainable progress.
+            {t('useCases.subtitle')}
           </p>
         </motion.div>
 
