@@ -17,6 +17,7 @@ import {
   Cog,
   Heart
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import HeroSection from './HeroSectionSimple';
 import EcosystemSection from './EcosystemSection';
 import UseCasesSection from './UseCasesSection';
