@@ -5,54 +5,85 @@
     "useCases": "ユースケース",
     "contact": "お問い合わせ",
     "getStarted": "始める",
-    "tagline": "ロボットエコシステムの構築"
+    "tagline": "Engineering Robotic Ecosystems"
   },
   "hero": {
     "badge": "AI駆動ロボティクス革命",
-    "title": "ロボット",
+    "title": "ロボティクス",
     "subtitle1": "エコシステム",
-    "subtitle2": "の構築",
-    "description": "包括的なロボティクスエコシステムで自動化の未来を発見してください。適応し、学習し、優秀なAI駆動のロボットソリューションで業界に革命を起こしています。",
+    "subtitle2": "の構築に貢献する技術パートナー",
+    "description": "包括的なロボティクス・エコシステムで、次世代の自動化を実現します。当社のAI駆動型ロボットソリューションは、学習し、適応し、進化することで、生産性の向上を支援します。",
     "exploreEcosystem": "エコシステムを探索",
     "viewUseCases": "ユースケースを見る"
   },
   "ecosystem": {
     "badge": "ロボティクスエコシステム",
-    "title": "導入",
-    "subtitle": "REks-I",
+    "title": "REks-Iの",
+    "subtitle": "ご紹介...",
     "description": "統合されたロボティクスエコシステムは、モジュラーハードウェアとインテリジェントソフトウェアを組み合わせて、業界全体にロボティクスソリューションを提供します。",
     "features": {
       "productivity": {
-        "title": "生産性の向上",
-        "description": "データ駆動型インサイトによる高速で賢い実行"
+        "title": "生産性の加速",
+        "description": "データ駆動のインサイトにより、より迅速かつ高度な業務遂行を実現"
       },
       "enterprise": {
         "title": "エンタープライズ対応",
-        "description": "あらゆる産業アプリケーションやユースケースに対応可能な柔軟でスケーラブルなロボティクスコンポーネント"
+        "description": "あらゆる業界のアプリケーションやユースケースに柔軟に対応可能な、スケーラブルなロボティクスコンポーネント"
       },
       "modular": {
         "title": "モジュラーアーキテクチャ",
-        "description": "ニーズと共に進化するよう設計"
+        "description": "お客様のニーズに合わせて進化する設計"
       },
       "analytics": {
         "title": "リアルタイム分析",
-        "description": "ロボットのパフォーマンスと運用に関するインサイトを提供する包括的な監視および分析ダッシュボード"
+        "description": "ロボットの性能および稼働状況を総合的に監視・分析するダッシュボードを提供 "
       },
       "cloud": {
         "title": "クラウド統合",
-        "description": "リモート監視、アップデート、およびロボットフリートの一元管理のためのシームレスなクラウド接続"
+        "description": "リモート監視、ソフトウェア更新、ロボット群の集中管理を可能にするシームレスなクラウド接続"
       },
       "agnostic": {
-        "title": "業界横断型",
-        "description": "多様なセクターにわたるロボティクス自動化の課題を解決するために構築"
+        "title": "業界非依存",
+        "description": "多様な業界のロボティクス自動化課題を解決するために設計"
       }
     }
   },
+  "easyImplementation": {
+  "badge": "エコシステムの導入",
+  "title": "ロボティクスソリューションを構築",
+  "highlight": "3つの簡単なフェーズで",
+  "description": "既存の自動化システムをアップグレードする場合でも、新規に構築する場合でも、REks-Iの導入はわずか3つのフェーズでスムーズに完了します。",
+  "phases": [
+    {
+      "title": "フェーズ 1",
+      "description": "お客様にとって最も重要な点と、REks-Iがそれをどのように解決できるかを特定します",
+      "icon": "BookCheck",
+      "iconGradient": ["from-blue-500", "to-purple-500"]
+    },
+    {
+      "title": "フェーズ 2",
+      "description": "REks-Iをお客様の環境に導入し、シームレスに統合してすぐに稼働できる状態にします",
+      "icon": "Hammer",
+      "iconGradient": ["from-green-500", "to-teal-500"]
+    },
+    {
+      "title": "フェーズ 3",
+      "description": "お客様と共にREks-Iを進化させ、カスタマイズ、拡張、継続的なサポートを提供します",
+      "icon": "Wrench",
+      "iconGradient": ["from-pink-500", "to-red-500"]
+    }
+  ],
+  "cta": {
+    "text": "お問い合わせ",
+    "subtext": "REks-Iの詳細はこちら",
+    "scrollTarget": "contact"
+  }
+},
   "useCases": {
     "badge": "実世界のアプリケーション",
     "title": "すべての業界を",
-    "subtitle": "変革",
-    "description": "農業と物流から他の幅広いセクターまで、当社のロボティクスソリューションは業界の進化を支援し、より賢い意思決定と持続可能な進歩を実現します。",
+    "subtitle": "変革へ導く",
+    "description": "農業や物流をはじめ、多岐にわたる業界において、当社のロボティクスソリューションは業務の高度化を支援し、スマートな意思決定と持続可能な成長を実現します。",
     "agriculture": {
       "title": "農業の変革",
       "subtitle": "農業",
@@ -90,9 +121,9 @@
       ]
     },
     "more": {
-      "title": "あらゆるセクター向けREks-I",
-      "subtitle": "もっと発見",
-      "description": "製薬工場でのスマート調剤と包装から建設でのインテリジェント検査まで、REks-Iは業界全体の複雑で影響力の高いユースケースにシームレスに適応します。",
+  "title": "あらゆるセクター向けREks-I",
+  "subtitle": "さらなる発見へ",
+  "description": "製薬工場におけるスマートな調剤・包装から建設業での高度な検査まで、REks-Iは多様な業界の複雑かつ重要なユースケースに柔軟かつシームレスに対応します。",
       "benefits": {
         "precision": "99.7％の外科精度",
         "monitoring": "継続的患者監視",

@@ -19,7 +19,7 @@
   "ecosystem": {
     "badge": "Robotics Ecosystem",
     "title": "Introducing",
-    "subtitle": "REks-I",
+    "subtitle": "REks-I...",
     "description": "Our integrated robotics ecosystem combines modular hardware, and intelligent software to deliver robotics solutions across industries.",
     "features": {
       "productivity": {
@@ -46,6 +46,46 @@
         "title": "Industry-Agnostic",
         "description": "Built to solve robotics automation challenges across diverse sectors"
       }
+    }
+  },
+  "easyImplementation": {
+    "badge": "Implementing the ecosystem",
+    "title": "Build your robotics solution",
+    "highlight": "in 3 simple phases",
+    "description": "Whether you're upgrading an existing automation setup or starting from scratch, integrating REks-I happens in just three simple phases.",
+    "phases": [
+      {
+        "title": "Phase 1",
+        "description": "We identify what matters most to you - and how REks-I can solve it",
+        "icon": "BookCheck",
+        "iconGradient": [
+          "from-blue-500",
+          "to-purple-500"
+        ]
+      },
+      {
+        "title": "Phase 2",
+        "description": "We bring REks-I into your world — seamlessly integrated and ready to perform",
+        "icon": "Hammer",
+        "iconGradient": [
+          "from-green-500",
+          "to-teal-500"
+        ]
+      },
+      {
+        "title": "Phase 3",
+        "description": "We evolve REks-I with you — customize, scale, and support it continuously",
+        "icon": "Wrench",
+        "iconGradient": [
+          "from-pink-500",
+          "to-red-500"
+        ]
+      }
+    ],
+    "cta": {
+      "text": "Reach out",
+      "subtext": "To know more about REks-I",
+      "scrollTarget": "contact"
     }
   },
   "useCases": {
@@ -114,7 +154,7 @@
     "title": "Transform your industry",
     "subtitle": "with REks-I",
     "description": "Connect with our robotics experts to explore how our ecosystem can enhance your operations and support your growth.",
-    "letsConnect": "Let's Connect",
+    "letsConnect": "Send Us a Message",
     "connectDescription": "Our team of specialists is ready to help you explore the possibilities of intelligent automation for your specific industry needs.",
     "contactInfo": {
       "email": {
@@ -136,7 +176,7 @@
       "roadmap": "ROI analysis and implementation roadmap"
     },
     "form": {
-      "title": "Send Us a Message",
+      "title": "",
       "firstName": "First Name",
       "lastName": "Last Name",
       "email": "Email Address",
@@ -179,7 +219,7 @@
   "loading": "Loading Reksai Robotics...",
   "language": {
     "english": "English",
-    "german": "German",  
+    "german": "German",
     "japanese": "Japanese"
   }
 }

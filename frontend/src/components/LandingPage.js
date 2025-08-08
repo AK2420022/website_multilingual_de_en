@@ -20,6 +20,7 @@ import {
 import { useTranslation } from 'react-i18next';
 import HeroSection from './HeroSectionSimple';
 import EcosystemSection from './EcosystemSection';
+import EasyImplementationSection from './EasyImplementation';
 import UseCasesSection from './UseCasesSection';
 import ContactSection from './ContactSection';
 import Navigation from './Navigation';
@@ -54,7 +55,7 @@ const LandingPage = () => {
       <Navigation />
       <HeroSection />
       <EcosystemSection />
-
+      <EasyImplementationSection />
       <UseCasesSection />      
       <ContactSection />
       <Footer />

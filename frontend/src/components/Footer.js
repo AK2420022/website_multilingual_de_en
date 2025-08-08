@@ -69,11 +69,6 @@ const Footer = () => {
               {t('footer.security')}
             </motion.a>
           </div>
-          
-          {/* Language Switcher in Footer */}
-          <div className="flex items-center">
-            <LanguageSwitcher variant="footer" />
-          </div>
         </div>
 
         {/* Right: Copyright */}

@@ -5,7 +5,7 @@
     "useCases": "Anwendungsfälle",
     "contact": "Kontakt",
     "getStarted": "Loslegen",
-    "tagline": "Robotische Ökosysteme entwickeln"
+    "tagline": "Engineering Robotic Ecosystems"
   },
   "hero": {
     "badge": "KI-gesteuerte Robotik-Revolution",
@@ -19,20 +19,20 @@
   "ecosystem": {
     "badge": "Robotik-Ökosystem",
     "title": "Einführung",
-    "subtitle": "REks-I",
+    "subtitle": "REks-I...",
     "description": "Unser integriertes Robotik-Ökosystem kombiniert modulare Hardware und intelligente Software, um Robotiklösungen für alle Branchen zu liefern.",
     "features": {
       "productivity": {
-        "title": "Produktivität beschleunigen",
+        "title": "Erhöhte Produktivität",
         "description": "Schnellere, intelligentere Ausführung mit datengesteuerten Erkenntnissen"
       },
       "enterprise": {
         "title": "Unternehmenstauglich",
-        "description": "Flexible, skalierbare Robotikkomponenten, die für jede Industrieanwendung oder jeden Anwendungsfall konfiguriert werden können"
+        "description": "Flexible, skalierbare Robotikkomponenten, die für jede Industrieanwendung und jeden Anwendungsfall konfiguriert werden können"
       },
       "modular": {
         "title": "Modulare Architektur",
-        "description": "Entwickelt, um sich mit Ihren Bedürfnissen zu entwickeln"
+        "description": "Wächst mit Ihren Bedürfnissen"
       },
       "analytics": {
         "title": "Echtzeit-Analytik",
@@ -48,6 +48,31 @@
       }
     }
   },
+  "easyImplementation": {
+  "badge": "Implementierung des Ökosystems",
+  "title": "Bauen Sie Ihre Robotiklösung",
+  "highlight": "in 3 einfachen Phasen",
+  "description": "Ganz gleich, ob Sie eine bestehende Automatisierung aufrüsten oder von Grund auf neu beginnen – die Integration von REks-I erfolgt in nur drei einfachen Phasen.",
+  "phases": [
+    {
+      "title": "Phase 1",
+      "description": "Wir identifizieren, was Ihnen am wichtigsten ist und wie REks-I dies lösen kann"
+    },
+    {
+      "title": "Phase 2",
+      "description": "Wir bringen REks-I in Ihre Welt – nahtlos integriert und sofort einsatzbereit"
+    },
+    {
+      "title": "Phase 3",
+      "description": "Wir entwickeln REks-I gemeinsam mit Ihnen weiter – passen es an, skalieren es und bieten kontinuierlichen Support"
+    }
+  ],
+  "cta": {
+    "text": "Kontakt aufnehmen",
+    "subtext": "Erfahren Sie mehr über REks-I",
+    "scrollTarget": "contact"
+  }
+},
   "useCases": {
     "badge": "Reale Anwendungen",
     "title": "Transformation",
@@ -114,7 +139,7 @@
     "title": "Transformieren Sie Ihre Branche",
     "subtitle": "mit REks-I",
     "description": "Verbinden Sie sich mit unseren Robotik-Experten, um zu erkunden, wie unser Ökosystem Ihre Abläufe verbessern und Ihr Wachstum unterstützen kann.",
-    "letsConnect": "Lassen Sie uns verbinden",
+    "letsConnect": "Schicken Sie uns eine Anfrage",
     "connectDescription": "Unser Spezialistenteam ist bereit, Ihnen zu helfen, die Möglichkeiten der intelligenten Automatisierung für Ihre spezifischen Branchenbedürfnisse zu erkunden.",
     "contactInfo": {
       "email": {
@@ -136,7 +161,7 @@
       "roadmap": "ROI-Analyse und Implementierungs-Roadmap"
     },
     "form": {
-      "title": "Senden Sie uns eine Nachricht",
+      "title": "",
       "firstName": "Vorname",
       "lastName": "Nachname",
       "email": "E-Mail-Adresse",
