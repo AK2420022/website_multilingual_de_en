@@ -4,41 +4,43 @@ import { Cpu, Brain, Cog, Shield, Zap, Globe, Users, CheckCircle, Building2, Fac
 import { useTranslation } from 'react-i18next';
 
 const EcosystemSection = () => {
+  const { t } = useTranslation();
+
   const ecosystemFeatures = [
     {
       icon: Brain,
-      title: "Accelerate productivity",
-      description: "Daster, smarter execution with data-driven insights",
+      title: t('ecosystem.features.productivity.title'),
+      description: t('ecosystem.features.productivity.description'),
       gradient: "from-primary-500 to-primary-600"
     },
     {
       icon: Cog,
-      title: "Enterprise-ready",
-      description: "Flexible, scalable robotics components that can be configured for any industry application or use case",
+      title: t('ecosystem.features.enterprise.title'),
+      description: t('ecosystem.features.enterprise.description'),
       gradient: "from-success-500 to-success-600"
     },
     {
       icon: Building2,
-      title: "Modular Architecture",
-      description: "Designed to evolve with your needs",
+      title: t('ecosystem.features.modular.title'),
+      description: t('ecosystem.features.modular.description'),
       gradient: "from-red-500 to-red-600"
     },
     {
       icon: Zap,
-      title: "Real-time Analytics",
-      description: "Comprehensive monitoring and analytics dashboard providing insights into robot performance and operations",
+      title: t('ecosystem.features.analytics.title'),
+      description: t('ecosystem.features.analytics.description'),
       gradient: "from-yellow-500 to-orange-500"
     },
     {
       icon: Globe,
-      title: "Cloud Integration",
-      description: "Seamless cloud connectivity for remote monitoring, updates, and centralized management of robot fleets",
+      title: t('ecosystem.features.cloud.title'),
+      description: t('ecosystem.features.cloud.description'),
       gradient: "from-blue-500 to-indigo-500"
     },
     {
       icon: Factory,
-      title: "Industry-Agnostic",
-      description: "Built to solve robotics automation challenges across diverse sectors",
+      title: t('ecosystem.features.agnostic.title'),
+      description: t('ecosystem.features.agnostic.description'),
       gradient: "from-purple-500 to-pink-500"
     }
   ];
