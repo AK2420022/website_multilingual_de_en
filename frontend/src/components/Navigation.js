@@ -127,7 +127,7 @@ const Navigation = () => {
                   document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                Get Started
+                {t('nav.getStarted')}
               </button>
             </div>
           </motion.div>
