@@ -73,6 +73,9 @@ const Navigation = () => {
               </motion.a>
             ))}
             
+            {/* Language Switcher */}
+            <LanguageSwitcher />
+            
             <motion.button
               className="px-6 py-3 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-all duration-300 hover:shadow-lg hover:shadow-primary-600/25"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -82,7 +85,7 @@ const Navigation = () => {
               whileTap={{ scale: 0.95 }}
               onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
             >
-              Contact
+              {t('nav.contact')}
             </motion.button>
           </div>
 
