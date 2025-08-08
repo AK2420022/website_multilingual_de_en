@@ -160,19 +160,19 @@ const ContactSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.8 }}
             >
-              <h4 className="text-secondary-900 font-semibold text-lg mb-3">What to Expect</h4>
+              <h4 className="text-secondary-900 font-semibold text-lg mb-3">{t('contact.whatToExpect')}</h4>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-success-500 flex-shrink-0" />
-                  <span className="text-secondary-700">Personalized consultation</span>
+                  <span className="text-secondary-700">{t('contact.expectations.consultation')}</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-success-500 flex-shrink-0" />
-                  <span className="text-secondary-700">Custom robotics solution assessment</span>
+                  <span className="text-secondary-700">{t('contact.expectations.assessment')}</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-success-500 flex-shrink-0" />
-                  <span className="text-secondary-700">ROI analysis and implementation roadmap</span>
+                  <span className="text-secondary-700">{t('contact.expectations.roadmap')}</span>
                 </div>
               </div>
             </motion.div>
