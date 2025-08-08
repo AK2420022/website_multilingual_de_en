@@ -52,16 +52,16 @@ const ContactSection = () => {
   const contactInfo = [
     {
       icon: Mail,
-      title: 'Email Us',
-      info: 'contact@reksai-robotics.com',
-      description: 'Get in touch for inquiries'
+      title: t('contact.contactInfo.email.title'),
+      info: t('contact.contactInfo.email.info'),
+      description: t('contact.contactInfo.email.description')
     },
     {
       icon: MapPin,
-      title: 'Our locations',
-      info: 'Aachen, Germany',
-      info2: 'Bangalore, India',      
-      description: 'Innovation headquarters'
+      title: t('contact.contactInfo.location.title'),
+      info: t('contact.contactInfo.location.info'),
+      info2: t('contact.contactInfo.location.info2'),      
+      description: t('contact.contactInfo.location.description')
     }
   ];
 
