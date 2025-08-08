@@ -336,9 +336,9 @@ const ContactSection = () => {
                   <CheckCircle className="h-10 w-10 text-white" />
                 </motion.div>
                 
-                <h3 className="text-2xl font-bold text-secondary-900 mb-4">Message Sent Successfully!</h3>
+                <h3 className="text-2xl font-bold text-secondary-900 mb-4">{t('contact.success.title')}</h3>
                 <p className="text-secondary-600 mb-8">
-                  Thank you for reaching out to Reksai Robotics. We have received your inquiry and our team will be in touch with you soon.
+                  {t('contact.success.description')}
                 </p>
                 
                 <motion.button
@@ -347,7 +347,7 @@ const ContactSection = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Send Another Message
+                  {t('contact.success.sendAnother')}
                 </motion.button>
               </motion.div>
             )}
