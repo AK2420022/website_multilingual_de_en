@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import PrivacyPolicy from './components/PrivacyPolicy';
 import SecurityPolicy from './components/SecurityPolicy';
+import './i18n'; // Initialize i18n
 
 function App() {
   return (
