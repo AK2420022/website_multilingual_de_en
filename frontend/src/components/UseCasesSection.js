@@ -5,74 +5,54 @@ import { useTranslation } from 'react-i18next';
 
 const UseCasesSection = () => {
   const [activeCase, setActiveCase] = useState(0);
+  const { t } = useTranslation();
 
   const useCases = [
     {
       id: 'agriculture',
       icon: Sprout,
-      title: 'Agriculture Transformation',
-      subtitle: 'Agriculture',
+      title: t('useCases.agriculture.title'),
+      subtitle: t('useCases.agriculture.subtitle'),
       image: 'agri.png',
-      description: 'Transform farming with AI-powered robots that monitor crops, optimize irrigation, and automate harvesting for maximum yield and sustainability.',
+      description: t('useCases.agriculture.description'),
       benefits: [
-        { icon: TrendingUp, text: '40% increase in crop yield', color: 'success' },
-        { icon: Clock, text: '24/7 autonomous monitoring', color: 'primary' },
-        { icon: Users, text: 'Reduced labor costs by 60%', color: 'purple' }
+        { icon: TrendingUp, text: t('useCases.agriculture.benefits.yield'), color: 'success' },
+        { icon: Clock, text: t('useCases.agriculture.benefits.monitoring'), color: 'primary' },
+        { icon: Users, text: t('useCases.agriculture.benefits.labor'), color: 'purple' }
       ],
-      features: [
-        'Precision planting and seeding',
-        'Real-time soil analysis',
-        'Automated pest detection',
-        'Weather-adaptive irrigation',
-        'Crop health monitoring',
-        'Predictive harvest timing'
-      ],
+      features: t('useCases.agriculture.features', { returnObjects: true }),
       gradient: 'from-success-500 to-success-600',
       bgColor: 'from-success-50 to-success-100'
     },
     {
       id: 'manufacturing',
       icon: Factory,
-      title: 'Logistics Excellence',
-      subtitle: 'Logistics',
+      title: t('useCases.logistics.title'),
+      subtitle: t('useCases.logistics.subtitle'),
       image: 'logistics.png',
-      description: 'Revolutionize warehouse and logistics operations with intelligent robots that improve accuracy, minimize delays, and streamline material handling and fulfillment workflows.',
+      description: t('useCases.logistics.description'),
       benefits: [
-        { icon: TrendingUp, text: '95% production efficiency', color: 'success' },
-        { icon: Clock, text: 'Zero unplanned downtime', color: 'primary' },
-        { icon: Users, text: 'Enhanced worker safety', color: 'purple' }
+        { icon: TrendingUp, text: t('useCases.logistics.benefits.efficiency'), color: 'success' },
+        { icon: Clock, text: t('useCases.logistics.benefits.downtime'), color: 'primary' },
+        { icon: Users, text: t('useCases.logistics.benefits.safety'), color: 'purple' }
       ],
-      features: [
-        'Quality control automation',
-        'Predictive maintenance',
-        'Assembly line optimization',
-        'Inventory management',
-        'Safety protocol enforcement',
-        'Real-time production analytics'
-      ],
+      features: t('useCases.logistics.features', { returnObjects: true }),
       gradient: 'from-primary-500 to-primary-600',
       bgColor: 'from-primary-50 to-primary-100'
     },
     {
       id: 'healthcare',
       icon: Compass,
-      title: 'REks-I for Every Sector',
-      subtitle: 'Discover More',
+      title: t('useCases.more.title'),
+      subtitle: t('useCases.more.subtitle'),
       image: 'more.png',
-      description: 'From smart dispensing and packaging in pharmaceutical factories to intelligent inspection in construction — REks-I adapts seamlessly to complex, high-impact use cases across industries.',
+      description: t('useCases.more.description'),
       benefits: [
-        { icon: TrendingUp, text: '99.7% surgical precision', color: 'success' },
-        { icon: Clock, text: 'Continuous patient monitoring', color: 'primary' },
-        { icon: Users, text: 'Improved patient outcomes', color: 'purple' }
+        { icon: TrendingUp, text: t('useCases.more.benefits.precision'), color: 'success' },
+        { icon: Clock, text: t('useCases.more.benefits.monitoring'), color: 'primary' },
+        { icon: Users, text: t('useCases.more.benefits.outcomes'), color: 'purple' }
       ],
-      features: [
-        'Minimally invasive surgery',
-        'Patient rehabilitation support',
-        'Medication delivery systems',
-        'Vital signs monitoring',
-        'Infection control protocols',
-        'Telemedicine integration'
-      ],
+      features: t('useCases.more.features', { returnObjects: true }),
       gradient: 'from-red-500 to-pink-500',
       bgColor: 'from-red-50 to-pink-50'
     }
