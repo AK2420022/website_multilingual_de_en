@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, CheckCircle, User, Building, MessageSquare } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const ContactSection = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -15,16 +17,13 @@ const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const industries = [
-    'Agriculture',
-    'Manufacturing',
-    'Healthcare',
-    'Logistics & Warehousing',
-    'Construction',
-    'Energy & Utilities',
-    'Automotive',
-    'Food & Beverage',
-    'Pharmaceuticals',
-    'Other'
+    t('contact.industries.manufacturing'),
+    t('contact.industries.automotive'),
+    t('contact.industries.healthcare'),
+    t('contact.industries.agriculture'),
+    t('contact.industries.logistics'),
+    t('contact.industries.construction'),
+    t('contact.industries.other')
   ];
 
   const handleInputChange = (e) => {
@@ -62,7 +61,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      info: 'contact@reksai-robotics.com',
+      info: t('contact.info.email'),
       description: 'Get in touch for inquiries'
     },
     {
@@ -102,17 +101,16 @@ const ContactSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <MessageSquare className="h-4 w-4" />
-            <span>Get Started Today</span>
+            <span>{t('contact.badge')}</span>
           </motion.div>
 
           <h2 className="text-5xl md:text-6xl font-bold text-secondary-900 mb-6">
-            Transform your industry
-            <span className="block gradient-text">with REks-I</span>
+            {t('contact.title')}
+            <span className="block gradient-text">{t('contact.titleYourBusiness')}</span>
           </h2>
           
           <p className="text-xl text-secondary-600 max-w-3xl mx-auto leading-relaxed">
-            Connect with our robotics experts to explore how our ecosystem can 
-            enhance your operations and support your growth.
+            {t('contact.subtitle')}
           </p>
         </motion.div>
 
@@ -204,7 +202,7 @@ const ContactSection = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="block text-secondary-700 text-sm font-medium mb-2">
-                      First Name *
+                      {t('contact.form.fullName')} *
                     </label>
                     <div className="relative">
                       <User className="absolute left-3 top-3 h-5 w-5 text-secondary-400" />
@@ -215,13 +213,13 @@ const ContactSection = () => {
                         onChange={handleInputChange}
                         required
                         className="w-full pl-11 pr-4 py-3 bg-white border border-primary-200 rounded-xl text-secondary-900 placeholder-secondary-400 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
-                        placeholder="John"
+                        placeholder={t('contact.form.fullNamePlaceholder')}
                       />
                     </div>
                   </div>
                   <div>
                     <label className="block text-secondary-700 text-sm font-medium mb-2">
-                      Last Name *
+                      {t('contact.form.companyName')} *
                     </label>
                     <input
                       type="text"
@@ -230,7 +228,7 @@ const ContactSection = () => {
                       onChange={handleInputChange}
                       required
                       className="w-full px-4 py-3 bg-white border border-primary-200 rounded-xl text-secondary-900 placeholder-secondary-400 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
-                      placeholder="Doe"
+                      placeholder={t('contact.form.companyNamePlaceholder')}
                     />
                   </div>
                 </div>
@@ -238,7 +236,7 @@ const ContactSection = () => {
                 {/* Email */}
                 <div>
                   <label className="block text-secondary-700 text-sm font-medium mb-2">
-                    Email Address *
+                    {t('contact.form.email')} *
                   </label>
                   <div className="relative">
                     <Mail className="absolute left-3 top-3 h-5 w-5 text-secondary-400" />
@@ -249,7 +247,7 @@ const ContactSection = () => {
                       onChange={handleInputChange}
                       required
                       className="w-full pl-11 pr-4 py-3 bg-white border border-primary-200 rounded-xl text-secondary-900 placeholder-secondary-400 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
-                      placeholder="john.doe@company.com"
+                      placeholder={t('contact.form.emailPlaceholder')}
                     />
                   </div>
                 </div>
@@ -257,7 +255,7 @@ const ContactSection = () => {
                 {/* Company */}
                 <div>
                   <label className="block text-secondary-700 text-sm font-medium mb-2">
-                    Company Name *
+                    {t('contact.form.phone')}
                   </label>
                   <div className="relative">
                     <Building className="absolute left-3 top-3 h-5 w-5 text-secondary-400" />
@@ -266,9 +264,8 @@ const ContactSection = () => {
                       name="company"
                       value={formData.company}
                       onChange={handleInputChange}
-                      required
                       className="w-full pl-11 pr-4 py-3 bg-white border border-primary-200 rounded-xl text-secondary-900 placeholder-secondary-400 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
-                      placeholder="Your Company"
+                      placeholder={t('contact.form.phonePlaceholder')}
                     />
                   </div>
                 </div>
@@ -276,7 +273,7 @@ const ContactSection = () => {
                 {/* Industry */}
                 <div>
                   <label className="block text-secondary-700 text-sm font-medium mb-2">
-                    Industry *
+                    {t('contact.form.industry')} *
                   </label>
                   <select
                     name="industry"
@@ -285,7 +282,7 @@ const ContactSection = () => {
                     required
                     className="w-full px-4 py-3 bg-white border border-primary-200 rounded-xl text-secondary-900 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300"
                   >
-                    <option value="">Select your industry</option>
+                    <option value="">{t('contact.form.industryPlaceholder')}</option>
                     {industries.map((industry) => (
                       <option key={industry} value={industry} className="bg-white">
                         {industry}
@@ -297,7 +294,7 @@ const ContactSection = () => {
                 {/* Message */}
                 <div>
                   <label className="block text-secondary-700 text-sm font-medium mb-2">
-                    Message
+                    {t('contact.form.message')}
                   </label>
                   <textarea
                     name="message"
@@ -305,7 +302,7 @@ const ContactSection = () => {
                     onChange={handleInputChange}
                     rows={4}
                     className="w-full px-4 py-3 bg-white border border-primary-200 rounded-xl text-secondary-900 placeholder-secondary-400 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300 resize-none"
-                    placeholder="Tell us about your robotics automation needs..."
+                    placeholder={t('contact.form.messagePlaceholder')}
                   />
                 </div>
 
@@ -320,11 +317,11 @@ const ContactSection = () => {
                   {isSubmitting ? (
                     <>
                       <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
-                      <span>Sending Message...</span>
+                      <span>{t('contact.form.submitting')}</span>
                     </>
                   ) : (
                     <>
-                      <span>Send Message</span>
+                      <span>{t('contact.form.submit')}</span>
                       <Send className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                     </>
                   )}
