@@ -27,6 +27,7 @@ import Footer from './Footer';
 
 const LandingPage = () => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     setIsLoaded(true);
@@ -37,7 +38,7 @@ const LandingPage = () => {
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="flex items-center space-x-4">
           <div className="w-8 h-8 border-4 border-primary-500 border-t-transparent rounded-full animate-spin"></div>
-          <span className="text-secondary-900 font-medium">Loading Reksai Robotics...</span>
+          <span className="text-secondary-900 font-medium">{t('loading')}</span>
         </div>
       </div>
     );
