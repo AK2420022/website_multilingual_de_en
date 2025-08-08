@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Cpu, Brain, Cog, Shield, Zap, Globe, Users, CheckCircle, Building2, Factory, BookCheck, Hammer, Wrench} from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const EasyImplementationSection = () => {
+  const { t } = useTranslation();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -42,16 +44,16 @@ const EasyImplementationSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Cpu className="h-4 w-4" />
-            <span>Implementing the ecosystem</span>
+            <span>{t('implementation.badge')}</span>
           </motion.div>
 
           <h2 className="text-5xl md:text-6xl font-bold text-secondary-900 mb-6">
-            Build your robotics solution
-            <span className="block gradient-text">in 3 simple phases</span>
+            {t('implementation.title')}
+            <span className="block gradient-text">{t('implementation.titlePowerful')}</span>
           </h2>
           
           <p className="text-xl text-secondary-600 max-w-3xl mx-auto leading-relaxed">
-	Whether you're upgrading an existing automation setup or starting from scratch, integrating REks-I happens in just <b>three simple phases</b>.
+            {t('implementation.subtitle')}
           </p>
         </motion.div>
 
@@ -64,7 +66,7 @@ const EasyImplementationSection = () => {
           transition={{ duration: 1, delay: 0.3 }}
         >
                  
-<div class="relative arrow-path flex flex-col justify-between items-center"
+<div className="relative arrow-path flex flex-col justify-between items-center"
 style={{
     backgroundImage: 'url("arrow-path.svg")',
     backgroundRepeat: 'no-repeat',
@@ -73,10 +75,10 @@ style={{
     height: '800px',
     backgroundColor: 'transparent', // Optional: ensure transparency    
   }}> 
-<div class="space-y-4">
+<div className="space-y-4">
   
   
-  <div class="h-100 p-8 bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl hover-lift hover:bg-white/90 transition-all duration-300 hover:shadow-xl">
+  <div className="h-100 p-8 bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl hover-lift hover:bg-white/90 transition-all duration-300 hover:shadow-xl">
 <div className="flex items-center gap-4 mb-6">
   {/* Icon with gradient background */}
   <div className="p-4 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-500 group-hover:scale-110 transition-transform duration-300">
@@ -85,15 +87,15 @@ style={{
 
   {/* Text on white background */}
   <h3 className="text-2xl font-bold text-gray-800 leading-none group-hover:text-blue-600 transition-colors duration-300">
-    Phase 1
+    {t('implementation.step1.title')}
   </h3>
 </div>
  <p className="text-secondary-600 leading-relaxed">
-	We <b>identify</b> what matters most to you - and how REks-I can solve it
+        {t('implementation.step1.description')}
     </p>
   </div>
 
-  <div class="h-100 p-8 bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl hover-lift hover:bg-white/90 transition-all duration-300 hover:shadow-xl">
+  <div className="h-100 p-8 bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl hover-lift hover:bg-white/90 transition-all duration-300 hover:shadow-xl">
 <div className="flex items-center gap-4 mb-6">
   {/* Icon with gradient background */}
   <div className="p-4 rounded-2xl bg-gradient-to-br from-green-500 to-teal-500 group-hover:scale-110 transition-transform duration-300">
@@ -102,28 +104,28 @@ style={{
 
   {/* Text on white background */}
   <h3 className="text-2xl font-bold text-gray-800 leading-none group-hover:text-blue-600 transition-colors duration-300">
-    Phase 2
+    {t('implementation.step2.title')}
   </h3>
 </div>
  <p className="text-secondary-600 leading-relaxed">
-	We bring REks-I into your world — <b>seamlessly integrated</b> and ready to perform
+        {t('implementation.step2.description')}
     </p>
   </div>  
 
-  <div class="h-100 p-8 bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl hover-lift hover:bg-white/90 transition-all duration-300 hover:shadow-xl">
+  <div className="h-100 p-8 bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl hover-lift hover:bg-white/90 transition-all duration-300 hover:shadow-xl">
 <div className="flex items-center gap-4 mb-6">
   {/* Icon with gradient background */}
   <div className="p-4 rounded-2xl bg-gradient-to-br from-pink-500 to-red-500 group-hover:scale-110 transition-transform duration-300">
     <Wrench className="h-8 w-8 text-white" />
   </div>
 
-  {/* Text on white background */} 
+  {/* Text on white background */ 
   <h3 className="text-2xl font-bold text-gray-800 leading-none group-hover:text-blue-600 transition-colors duration-300">
-    Phase 3
+    {t('implementation.step3.title')}
   </h3>
 </div>                   
-    <p class="text-secondary-600 leading-relaxed">
-	We <b>evolve</b> REks-I with you — customize, scale, and support it continuously
+    <p className="text-secondary-600 leading-relaxed">
+        {t('implementation.step3.description')}
     </p>
   </div>    
 </div> 
@@ -149,7 +151,7 @@ style={{
             whileTap={{ scale: 0.95 }}
             onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
           >
-            <span>Reach out</span>
+            <span>{t('implementation.getStarted')}</span>
             <motion.div
               className="ml-2"
               animate={{ x: [0, 5, 0] }}
