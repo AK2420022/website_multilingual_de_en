@@ -53,7 +53,7 @@ const Navigation = () => {
               <h1 className="text-2xl font-bold text-secondary-900">
                 Reksai <span className="text-primary-600">Robotics</span>
               </h1>
-              <p className="text-xs text-secondary-500">Engineering Robotic Ecosystems</p>
+              <p className="text-xs text-secondary-500">{t('nav.tagline')}</p>
             </div>
           </motion.div>
 
