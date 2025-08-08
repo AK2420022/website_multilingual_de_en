@@ -42,31 +42,38 @@ const Footer = () => {
   {/* Bottom Bar */}
   <div className="border-t border-secondary-700 py-8">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col md:flex-row justify-between items-center">
+      <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
         
-        {/* Left: Links */}
-        <div className="flex space-x-4">
-          <motion.a
-            href="/privacy.html"
-            className="text-secondary-400 text-sm hover:underline"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-          >
-            Data Privacy
-          </motion.a>
+        {/* Left: Links & Language Switcher */}
+        <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
+          <div className="flex space-x-4">
+            <motion.a
+              href="/privacy.html"
+              className="text-secondary-400 text-sm hover:underline"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              {t('footer.dataPrivacy')}
+            </motion.a>
 
-          <motion.a
-            href="/security.html"
-            className="text-secondary-400 text-sm hover:underline"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            Security
-          </motion.a>
+            <motion.a
+              href="/security.html"
+              className="text-secondary-400 text-sm hover:underline"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              {t('footer.security')}
+            </motion.a>
+          </div>
+          
+          {/* Language Switcher in Footer */}
+          <div className="flex items-center">
+            <LanguageSwitcher variant="footer" />
+          </div>
         </div>
 
         {/* Right: Copyright */}
@@ -77,7 +84,7 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          © 2025 Reksai Robotics. All rights reserved.
+          {t('footer.copyright')}
         </motion.p>
       </div>
     </div>
