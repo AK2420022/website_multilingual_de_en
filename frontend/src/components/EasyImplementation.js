@@ -113,17 +113,17 @@ style={{
   </div>  
 
   <div className="h-100 p-8 bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl hover-lift hover:bg-white/90 transition-all duration-300 hover:shadow-xl">
-<div className="flex items-center gap-4 mb-6">
-  {/* Icon with gradient background */}
-  <div className="p-4 rounded-2xl bg-gradient-to-br from-pink-500 to-red-500 group-hover:scale-110 transition-transform duration-300">
-    <Wrench className="h-8 w-8 text-white" />
-  </div>
+    <div className="flex items-center gap-4 mb-6">
+      {/* Icon with gradient background */}
+      <div className="p-4 rounded-2xl bg-gradient-to-br from-pink-500 to-red-500 group-hover:scale-110 transition-transform duration-300">
+        <Wrench className="h-8 w-8 text-white" />
+      </div>
 
-  {/* Text on white background */ 
-  <h3 className="text-2xl font-bold text-gray-800 leading-none group-hover:text-blue-600 transition-colors duration-300">
-    {t('implementation.step3.title')}
-  </h3>
-</div>                   
+      {/* Text on white background */ 
+      <h3 className="text-2xl font-bold text-gray-800 leading-none group-hover:text-blue-600 transition-colors duration-300">
+        {t('implementation.step3.title')}
+      </h3>
+    </div>                   
     <p className="text-secondary-600 leading-relaxed">
         {t('implementation.step3.description')}
     </p>
