@@ -31,7 +31,7 @@ const HeroSection = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <Sparkles className="h-4 w-4" />
-                <span>AI-Powered Robotics Revolution</span>
+                <span>{t('hero.badge')}</span>
               </motion.div>
 
               {/* Main Headline */}
