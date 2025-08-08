@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Cpu } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navigation = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -16,9 +19,9 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Ecosystem', href: '#ecosystem' },
-    { name: 'Use Cases', href: '#use-cases' },
+    { name: t('nav.home'), href: '#home' },
+    { name: t('nav.ecosystem'), href: '#ecosystem' },
+    { name: t('nav.useCases'), href: '#use-cases' },
   ];
 
   return (
@@ -55,7 +58,7 @@ const Navigation = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item, index) => (
               <motion.a
                 key={item.name}
@@ -70,6 +73,15 @@ const Navigation = () => {
               </motion.a>
             ))}
             
+            {/* Language Switcher */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
+            >
+              <LanguageSwitcher variant="dropdown" />
+            </motion.div>
+            
             <motion.button
               className="px-6 py-3 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-all duration-300 hover:shadow-lg hover:shadow-primary-600/25"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -79,12 +91,13 @@ const Navigation = () => {
               whileTap={{ scale: 0.95 }}
               onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
             >
-              Contact
+              {t('nav.contact')}
             </motion.button>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            <LanguageSwitcher variant="dropdown" className="mr-2" />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 text-secondary-600 hover:text-secondary-900 transition-colors duration-300"
@@ -121,7 +134,7 @@ const Navigation = () => {
                   document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                Get Started
+                {t('nav.getStarted')}
               </button>
             </div>
           </motion.div>
