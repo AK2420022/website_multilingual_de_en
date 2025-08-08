@@ -93,7 +93,7 @@ const ContactSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <MessageSquare className="h-4 w-4" />
-            <span>Get Started Today</span>
+            <span>{t('contact.badge')}</span>
           </motion.div>
 
           <h2 className="text-5xl md:text-6xl font-bold text-secondary-900 mb-6">
