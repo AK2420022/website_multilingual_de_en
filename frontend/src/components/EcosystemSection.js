@@ -87,13 +87,12 @@ const EcosystemSection = () => {
           </motion.div>
 
           <h2 className="text-5xl md:text-6xl font-bold text-secondary-900 mb-6">
-            Introducing
-            <span className="block gradient-text">REks-I</span>
+            {t('ecosystem.title')}
+            <span className="block gradient-text">{t('ecosystem.subtitle')}</span>
           </h2>
           
           <p className="text-xl text-secondary-600 max-w-3xl mx-auto leading-relaxed">
-            Our integrated robotics ecosystem combines modular hardware, 
-            and intelligent software to deliver robotics solutions across industries.
+            {t('ecosystem.description')}
           </p>
         </motion.div>
 
