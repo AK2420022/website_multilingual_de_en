@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, PlayCircle, Sparkles, Zap } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
   return (
