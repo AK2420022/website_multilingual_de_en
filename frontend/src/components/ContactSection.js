@@ -14,19 +14,9 @@ const ContactSection = () => {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { t } = useTranslation();
 
-  const industries = [
-    'Agriculture',
-    'Manufacturing',
-    'Healthcare',
-    'Logistics & Warehousing',
-    'Construction',
-    'Energy & Utilities',
-    'Automotive',
-    'Food & Beverage',
-    'Pharmaceuticals',
-    'Other'
-  ];
+  const industries = t('contact.industries', { returnObjects: true });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
