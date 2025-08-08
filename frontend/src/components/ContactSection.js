@@ -286,7 +286,7 @@ const ContactSection = () => {
                 {/* Message */}
                 <div>
                   <label className="block text-secondary-700 text-sm font-medium mb-2">
-                    Message
+                    {t('contact.form.message')}
                   </label>
                   <textarea
                     name="message"
@@ -294,7 +294,7 @@ const ContactSection = () => {
                     onChange={handleInputChange}
                     rows={4}
                     className="w-full px-4 py-3 bg-white border border-primary-200 rounded-xl text-secondary-900 placeholder-secondary-400 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all duration-300 resize-none"
-                    placeholder="Tell us about your robotics automation needs..."
+                    placeholder={t('contact.form.messagePlaceholder')}
                   />
                 </div>
 
