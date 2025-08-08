@@ -7,6 +7,7 @@ import PrivacyPolicy from './PrivacyPolicy';
 import SecurityPolicy from './PrivacyPolicy';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const footerLinks = {
     'Solutions': [
       'Agriculture Robotics',
