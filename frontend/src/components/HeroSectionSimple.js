@@ -41,9 +41,9 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.4 }}
               >
-                Engineering
-                <span className="block gradient-text"> Robotic</span>
-                <span className="block text-primary-600"> Ecosystems</span>
+                {t('hero.title')}
+                <span className="block gradient-text"> {t('hero.subtitle1')}</span>
+                <span className="block text-primary-600"> {t('hero.subtitle2')}</span>
               </motion.h1>
 
               {/* Subtitle */}
