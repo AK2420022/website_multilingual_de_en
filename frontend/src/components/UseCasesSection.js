@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Sprout, Factory, Heart, ArrowRight, PlayCircle, TrendingUp, Clock, Users, Compass } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const UseCasesSection = () => {
   const [activeCase, setActiveCase] = useState(0);
