@@ -191,7 +191,7 @@ const UseCasesSection = () => {
               whileTap={{ scale: 0.98 }}
               onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
             >
-              <span>Learn More About {useCases[activeCase].title.split(' ')[0]}</span>
+              <span>{t('useCases.learnMore')} {useCases[activeCase].title.split(' ')[0]}</span>
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </motion.button>
           </div>
